@@ -26,6 +26,11 @@ register_nav_menus([
 //CDN形式のCSSとJSの読み込み
 function add_my_files() {
   wp_enqueue_style(
+    'font-notoserif',  //$handle
+    '//https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap',
+    array(), 'false', 'all'  //$src
+  );
+  wp_enqueue_style(
   'fontawesome4.7',  //$handle
   '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'  //$src
   );
@@ -61,7 +66,11 @@ function my_enqueue_scripts()
   wp_enqueue_style('search-form-style', get_template_directory_uri() . '/css/searchform.css', array(), $version);
   wp_enqueue_style('search-style', get_template_directory_uri() . '/css/search.css', array(), $version);
   wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/css/sidebar.css', array(), $version);
-  wp_enqueue_script('main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), $version, true);
+  wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css', array(), $version);
+  wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array(), $version);
+  wp_enqueue_style('button-style', get_template_directory_uri() . '/css/button.css', array(), $version);
+  wp_enqueue_style('navi-style', get_template_directory_uri() . '/css/navi.css', array(), $version);
+  wp_enqueue_script('navi-script', get_template_directory_uri() . '/js/navi.js', array('jquery'), $version, true);
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
 

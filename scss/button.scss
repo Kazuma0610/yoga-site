@@ -1,0 +1,64 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+/*基本設定*/
+.btn,
+a.btn,
+button.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*トップのお問合せボタン*/
+/*20番目*/
+a.btn--orange-2 {
+    color: #fff;
+    background-color: #66A17D;
+    width: 50%;
+    &:hover{
+      color: #fff;
+      background: #8cb99e;
+    }
+    @at-root a.btn-c{
+      font-size: 1rem;
+      position: relative;
+      padding: .8rem 3.3rem;
+      @include m.breakpoint(tablet){
+        padding: .8rem 0.5rem;
+      }
+      @include m.breakpoint(pc){
+        padding: .8rem 3.3rem;
+      }
+    }
+    &::before{
+      font-family: 'Font Awesome 5 Free';
+      font-size: 1rem;
+      line-height: 1;
+      position: absolute;
+      top: calc(50% - .5rem);
+      right: 1rem;
+      margin: 0;
+      padding: 0;
+      content: '\f054';
+    }
+    i.fa{
+      margin-right: 1rem;
+    }
+  }

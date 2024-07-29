@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+#header .header-inner .logo-navi-wrapper-pc {
+  display: none;
+}
+@media (min-width: 64.375rem) {
+  #header .header-inner .logo-navi-wrapper-pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+#header .header-inner .logo-navi-wrapper-pc .navi-pc ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+}
+#header .header-inner .logo-navi-wrapper-pc .navi-pc ul li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+#header .header-inner .logo-navi-wrapper-pc .navi-pc ul li a {
+  position: relative;
+}
+#header .header-inner .logo-navi-wrapper-pc .navi-pc ul li a:hover {
+  color: #0481A2;
+}
+#header .header-inner .logo-navi-wrapper-pc .navi-pc ul li a:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}
+#header .header-inner .logo-navi-wrapper-pc .navi-pc ul li a:after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線になる丸の形状*/
+  width: 80%;
+  height: 2px;
+  background: #0481A2;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
+}
+#header .header-inner .logo-navi-wrapper-pc .navi-pc ul li .current a {
+  color: #0481A2;
+}
+#header .header-inner .logo-navi-wrapper-pc .navi-pc ul li .current a::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}
+#header .header-inner .logo-navi-wrapper-sp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+@media (min-width: 64.375rem) {
+  #header .header-inner .logo-navi-wrapper-sp {
+    display: none;
+  }
+}

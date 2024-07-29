@@ -8,7 +8,7 @@ header {
 
 .header-inner {
   height: 80px;
-  background-color: #5f6d7b;
+  background-color: #fff;
 }
 
 .container {
@@ -34,7 +34,13 @@ footer {
 }
 
 .header-inner,
-.footer-inner,
+.footer-inner {
+  width: 95%;
+  margin: 0 auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;

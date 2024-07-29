@@ -8,7 +8,7 @@
 
     </div><!--end contents-->
 
-    <?php get_sidebar(); ?>
+    <!--<?php get_sidebar(); ?>-->
 
   </main><!--end main container-->
 

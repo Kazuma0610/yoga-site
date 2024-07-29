@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+/*基本設定*/
+.btn,
+a.btn,
+button.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*トップのお問合せボタン*/
+/*20番目*/
+a.btn--orange-2 {
+  color: #fff;
+  background-color: #66A17D;
+  width: 50%;
+}
+a.btn--orange-2:hover {
+  color: #fff;
+  background: #8cb99e;
+}
+a.btn-c {
+  font-size: 1rem;
+  position: relative;
+  padding: 0.8rem 3.3rem;
+}
+@media (min-width: 48rem) {
+  a.btn-c {
+    padding: 0.8rem 0.5rem;
+  }
+}
+@media (min-width: 64.375rem) {
+  a.btn-c {
+    padding: 0.8rem 3.3rem;
+  }
+}
+
+a.btn--orange-2::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: "\f054";
+}
+a.btn--orange-2 i.fa {
+  margin-right: 1rem;
+}
