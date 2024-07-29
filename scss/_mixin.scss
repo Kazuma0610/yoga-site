@@ -1,0 +1,24 @@
+/*レスポンシブル*/
+@mixin breakpoint($point) {
+	@if $point == mini {
+		@media (min-width: 25rem) {
+			@content;
+		}
+	}
+	@if $point == tablet {
+		@media (min-width: 48rem) {
+			@content;
+		}
+	}
+    @if $point == only-tab {
+		@media (min-width: 55rem) {
+			@content;
+		}
+	}
+	@if $point == pc {
+		@media (min-width: 64.375rem) {
+			@content;
+		}
+	}
+    
+}

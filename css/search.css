@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+.no-search {
+  text-align: center;
+}
+.no-search .no-search-p {
+  margin-top: 60px;
+}
+.no-search .top-link {
+  display: block;
+  margin: 30px 0;
+}

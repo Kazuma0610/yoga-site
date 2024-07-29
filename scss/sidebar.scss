@@ -1,0 +1,52 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+/*-------------------------------------------
+aside
+-------------------------------------------*/
+#sidebar {
+    width: 100%;
+    @include m.breakpoint(tablet){
+        width: 33%;
+        padding: 20px;
+       }
+    .author {
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 10px;
+        img{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        .side-title{
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .profile{
+            font-size: 0.875rem;
+            text-align: left;
+        }
+      }
+    .archive {
+        margin:30px 0;
+        text-align: center;
+        .side-title{
+            text-align: left;
+            padding: 20px;
+        }
+        ul{
+            border-bottom: solid  1px #777;
+            li{
+                font-size: 0.875rem;
+                border-top: solid  1px #777;
+                padding: 20px;
+                text-align: left;
+            }
+        }
+    }
+  }
+  
+  

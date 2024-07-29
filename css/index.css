@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+/*---------------確認用に一時記述----------------*/
+/*--------要素を入れたら高さを消してください------*/
+header {
+  background-color: #43515e;
+}
+
+.header-inner {
+  height: 80px;
+  background-color: #5f6d7b;
+}
+
+.container {
+  background-color: #a8b1c4;
+}
+
+.contents {
+  background-color: #cdced3;
+  padding: 10px;
+}
+
+.sidebar {
+  background-color: #edf2f6;
+}
+
+footer {
+  background-color: #43515e;
+}
+
+.footer-inner {
+  height: 250px;
+  background-color: #5f6d7b;
+}
+
+.header-inner,
+.footer-inner,
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+/*----------------------------------------------*/

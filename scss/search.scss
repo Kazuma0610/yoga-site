@@ -1,0 +1,13 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+.no-search{
+    text-align: center;
+    .no-search-p{
+        margin-top: 60px;
+    }
+    .top-link{
+        display: block;
+        margin: 30px 0;
+    }
+}

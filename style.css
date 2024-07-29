@@ -1,0 +1,179 @@
+@charset "utf-8";
+/*
+Theme Name: 不動産のサンプルサイト
+Author: Kazuma
+Description: realestate-sample theme
+Version： 6.5.2
+*/
+
+/*---------------サイトの基本設定---------------*/
+
+
+/*cssのリセット*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,
+ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+figcaption,figure,footer,header,hgroup,menu,nav,section,
+summary,time,mark,audio,video {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+
+/*html&bodyの設定*/
+html{
+	font-size: 1rem;
+    overflow-y: scroll;
+}
+
+body{
+	font-family: "YakuHanJPs_Noto", "Roboto", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.8;
+	width: 100%;
+    height: 100%;
+	overflow-x: hidden;
+}
+
+
+/* - -  h1.h2.h3....  - - */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #000;
+  }
+
+
+/* -- a -- */
+a {
+	color: #333;
+	text-decoration: none;
+	outline: none;
+}
+
+a, a > img {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+
+/* -- img -- */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+
+/* -- ul -- */
+ul {
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+
+
+/* -- :hover -- */
+a:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	cursor: pointer;
+}
+
+
+/* -- input --*/
+input[type="text"]{
+  font-size: 1rem;
+}
+input[type="submit"]{
+  padding: 8px;
+  border: #efefef;
+  color: #000;
+  background-color: aliceblue;
+}
+
+
+/*投稿・アーカイブ画面のカラム設定*/
+.container {
+  padding-top: 20px;
+}
+
+@media (min-width: 48rem) {
+  .two-columns .contents {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 55rem) {
+  .two-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .two-columns .contents {
+    flex: 1 1 auto;
+  }
+  .two-columns .sidebar {
+    flex: 0 0 250px;
+  }
+}
+
+
+/*ページネーションの設定*/
+.pagination ul{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  margin-top: 80px;
+}
+
+
+/*パンクズの設定*/
+.breadcrumb{
+	font-size: .625rem;
+	max-width: 1080px;
+	margin: 0 auto;
+	text-align: left;
+	background: #efefef;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.breadcrumb p{
+	margin: 0 auto;
+	padding: 5px;
+}
+.breadcrumb span{
+	padding:0 10px 0 10px;
+}
+.breadcrumb span:nth-child(1){
+	padding-left: 0px;
+}
+@media (min-width: 700px) {
+	.breadcrumb{
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+@media (min-width: 880px) {
+	.breadcrumb{
+		font-size: 1rem;
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+		background: #efefef;
+	}
+}
+
+/*---------------サイトの基本設定---------------*/

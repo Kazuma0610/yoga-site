@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+/*-------------------------------------------
+aside
+-------------------------------------------*/
+#sidebar {
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  #sidebar {
+    width: 33%;
+    padding: 20px;
+  }
+}
+#sidebar .author {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 10px;
+}
+#sidebar .author img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+#sidebar .author .side-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#sidebar .author .profile {
+  font-size: 0.875rem;
+  text-align: left;
+}
+#sidebar .archive {
+  margin: 30px 0;
+  text-align: center;
+}
+#sidebar .archive .side-title {
+  text-align: left;
+  padding: 20px;
+}
+#sidebar .archive ul {
+  border-bottom: solid 1px #777;
+}
+#sidebar .archive ul li {
+  font-size: 0.875rem;
+  border-top: solid 1px #777;
+  padding: 20px;
+  text-align: left;
+}
