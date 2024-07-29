@@ -14,6 +14,8 @@
 <header id="header" class="header">
   
   <div class="header-inner">
+  
+  <p>ああ</p>
 
     <?php
       if (has_nav_menu('global_nav')) {
