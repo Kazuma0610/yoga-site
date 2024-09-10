@@ -1,0 +1,68 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+#footer{
+  .footer-inner{
+    padding: 10px;
+    .navi-logo-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .navi-footer{
+        margin-left: 10px;
+        @include m.breakpoint(tablet){
+          margin-left: 0px;
+        }
+        .ft-tl{
+          font-size:2rem;
+          color: #fff;
+        }
+        .navi-pc-ft{
+          ul{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            @include m.breakpoint(tablet){
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 10px;
+            }
+            @include m.breakpoint(ipad-pro){
+              display: flex;
+              flex-wrap: nowrap;
+              gap:20px;
+            }
+            li{
+              width: fit-content;
+              padding: 5px;
+              @include m.breakpoint(tablet){
+                width: calc(40%);
+                padding: 0px;
+              }
+              @include m.breakpoint(ipad-pro){
+                width: fit-content!important;
+              }
+              a{
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .ft-logo-img{
+        display: none;
+        position: relative;
+        top:30px;
+        @include m.breakpoint(tablet){
+          display: block;
+        }
+      }
+    }
+    .copyright{
+      text-align: center;
+      font-size: .7rem;
+      margin: 50px 0 0 0;
+      color: #fff;
+    }
+  }
+}

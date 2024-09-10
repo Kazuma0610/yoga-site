@@ -5,48 +5,84 @@
 aside
 -------------------------------------------*/
 #sidebar {
-    width: 100%;
-    @include m.breakpoint(tablet){
-        width: 33%;
-        padding: 20px;
-       }
-    .author {
-        text-align: center;
-        margin-bottom: 60px;
-        padding: 10px;
-        img{
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            margin-bottom: 30px;
-        }
-        .side-title{
-            font-size: 1.125rem;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        .profile{
-            font-size: 0.875rem;
-            text-align: left;
-        }
-      }
-    .archive {
-        margin:30px 0;
-        text-align: center;
-        .side-title{
-            text-align: left;
-            padding: 20px;
-        }
-        ul{
-            border-bottom: solid  1px #777;
-            li{
-                font-size: 0.875rem;
-                border-top: solid  1px #777;
-                padding: 20px;
-                text-align: left;
-            }
-        }
+  width: 100%;
+  margin-top: 50px;
+  @include m.breakpoint(tablet){
+    width: 33%;
+  }
+  @include m.breakpoint(ipad-pro){
+    width: 33%;
+    padding: 20px;
+    margin-top: 0px;
+  }
+  .author {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 10px;
+    img{
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+    .side-title{
+      font-size: 1.125rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .profile{
+      font-size: 0.875rem;
+      text-align: left;
     }
   }
+  .archive {
+    margin:30px 0;
+    text-align: center;
+    div{
+      &:nth-child(2){
+        margin-top: 20px;
+      }
+      .widget-title{
+        text-align: left;
+        margin-bottom: 5px;
+        i{
+          margin-right: 5px;
+        }
+      }
+      .side-title{
+        text-align: left;
+      }
+      .wp-widget-group__inner-blocks{
+        margin-top: 0px;
+        ul{
+          li{
+            font-size: 0.875rem;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .news-side{
+      margin-top: 20px;
+      text-align: left;
+      h2{
+        margin-bottom: 5px;
+        .fa-solid{
+          margin-right: 5px;
+        }
+      }
+      ul{
+        li{
+          font-size: 0.875rem;
+          padding-left: 10px;
+          padding-bottom: 5px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
   
   

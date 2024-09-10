@@ -39,9 +39,9 @@
         ); ?>
 
         <?php if (is_singular('post')) { ?>
-            <footer class="entry-footer">
+            <div class="entry-footer">
                 <i class="fas fa-folder-open"></i><span class="cat-links"><?php the_category(','); ?></span>
-            </footer><!--.entry-footer -->
+            </div><!--.entry-footer -->
         <?php } // is_singlar('post') ?>
 
         <!--メインクエリはまだ未設定-->

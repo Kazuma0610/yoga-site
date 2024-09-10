@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+.contact-wrapper {
+  padding: 10px;
+  text-align: center;
+}
+.contact-wrapper .heading06 {
+  position: relative;
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  .contact-wrapper .heading06 {
+    padding-top: 50px;
+    font-size: 1.5625rem;
+  }
+}
+.contact-wrapper .heading06::before {
+  content: attr(data-en);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(21, 107, 47, 0.2);
+  font-size: 3rem;
+  font-style: italic;
+}
+@media (min-width: 48rem) {
+  .contact-wrapper .heading06::before {
+    font-size: 5rem;
+    top: -20px;
+  }
+}
+.contact-wrapper p {
+  text-align: left;
+}
+@media (min-width: 48rem) {
+  .contact-wrapper p {
+    text-align: left;
+  }
+}
+.contact-wrapper .contact-form {
+  text-align: center;
+  margin: 0 auto;
+}
+@media (min-width: 62.5rem) {
+  .contact-wrapper .contact-form {
+    padding: 30px;
+    width: 70%;
+  }
+}
+@media (min-width: 48rem) {
+  .contact-wrapper .contact-form form {
+    padding: 0 30px 0 30px;
+  }
+}
+.contact-wrapper .contact-form form input[type=text] {
+  width: 95%;
+  padding: 5px 10px;
+  font-size: medium;
+  border: none;
+  border-radius: 3px;
+  background: #ddf0ff;
+}
+.contact-wrapper .contact-form form .property {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: medium;
+  border: none;
+  border-radius: 3px;
+  background: #fff !important;
+}
+.contact-wrapper .contact-form form input[name=btn_confirm],
+.contact-wrapper .contact-form form input[name=btn_submit],
+.contact-wrapper .contact-form form input[name=btn_back] {
+  margin-top: 10px;
+  padding: 5px 20px;
+  font-size: 0.8rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #2887d1;
+  background: #4eaaf1;
+}
+.contact-wrapper .contact-form form input[name=btn_back] {
+  margin-right: 20px;
+  box-shadow: 0 3px 0 #777;
+  background: #999;
+}
+.contact-wrapper .contact-form form .dammy {
+  display: none;
+}
+.contact-wrapper .contact-form form .element_wrap {
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.contact-wrapper .contact-form form .element_wrap label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 100%;
+}
+.contact-wrapper .contact-form form .element_wrap label .required {
+  color: red;
+  font-size: 86%;
+  margin-top: 10px;
+  font-weight: normal !important;
+}
+.contact-wrapper .contact-form form .element_wrap label a:hover {
+  color: red;
+}
+.contact-wrapper .contact-form form .element_wrap p {
+  display: block;
+  margin: 0;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.contact-wrapper .contact-form form .element_wrap span {
+  display: block;
+}
+.contact-wrapper .contact-form form .element_wrap .required {
+  display: inline;
+  margin-left: 10px;
+  color: red;
+  font-size: 0.7rem;
+}
+.contact-wrapper .contact-form form .element_wrap select[name=select] {
+  padding: 5px;
+}
+.contact-wrapper .contact-form form .element_wrap textarea[name=contact] {
+  padding: 5px 10px;
+  width: 95%;
+  height: 100px;
+  font-size: medium;
+  border: none;
+  border-radius: 3px;
+  background: #ddf0ff;
+}
+.contact-wrapper .contact-form form .form-text {
+  text-align: center;
+}
+.contact-wrapper .contact-form form .form-text p {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+  font-size: 0.8rem;
+  margin: 10px 0 20px 0;
+}
+@media (min-width: 48rem) {
+  .contact-wrapper .contact-form form .form-text p {
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
+  }
+}
+@media (min-width: 64.375rem) {
+  .contact-wrapper .contact-form form .form-text p {
+    font-size: 1rem;
+    margin: 0px 0 20px 0;
+  }
+}
+.contact-wrapper .contact-form form .form-check {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.contact-wrapper .contact-form .error_list {
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  color: #ff2e5a;
+  font-size: 0.8rem;
+  text-align: left;
+  border: 1px solid #ff2e5a;
+  border-radius: 5px;
+}
+@media (min-width: 48rem) {
+  .contact-wrapper .contact-form .error_list {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+.contact-wrapper .contact-form .done_text {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 30px;
+}

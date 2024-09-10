@@ -1,0 +1,164 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+#part4{
+  margin-top: 100px;
+  .price-wrapper-pc{
+    display: none;
+    @include m.breakpoint(ipad-pro){
+      display: block;
+    }
+    h2{
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      .subtitle{
+        display: block;
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #66A17D;
+      }
+    }
+    .price-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      .price-img{
+        width: 50%;
+        position: relative;
+        right: 50px;
+      }
+      .price-text{
+        width: 50%;
+        border: 1px solid #ebebeb;
+        background-color: #fff;
+        position: relative;
+        left: 50px;
+        z-index: 2;
+        padding: 30px;
+        h3{
+          font-size: 1.5rem;
+          border-bottom: 1px solid #66A17D;
+        }
+        p{
+          margin-bottom: 20px;
+        }
+        .price-detail{
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .price-wrapper-sp{
+    display: block;
+    @include m.breakpoint(ipad-pro){
+      display: none;
+    }
+    h2{
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      .subtitle{
+        display: block;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #66A17D;
+      }
+    }
+    .price-content{
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      .price-text{
+        max-width: 540px;
+        margin: 0 auto;
+        background: #fff;
+        border: 1px solid #ebebeb;
+        h3{
+          font-size: 1.2rem;
+          border-bottom: 1px solid #66A17D;
+          text-align: left;
+          padding: 5px;
+          padding-left: 20px;
+        }
+        .price-detail{
+          text-align: left;
+          p{
+            font-size: 1rem;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+  .price-grid{
+    margin-top: 30px;
+    h3{
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: #66A17D;
+    }
+    table{
+      width: 100%;
+      text-align: left;
+      border-collapse: collapse;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      margin-top: 20px;
+      font-size: .8rem;
+      @include m.breakpoint(tablet){
+        width: 75%;
+        font-size: 1rem;
+      }
+      @include m.breakpoint(ipad-pro){
+        width: 90%;
+      }
+      tr{
+        padding: 10px 15px;
+        background-color: #49796B;
+      }
+      th {
+        font-weight: bold;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: .8rem;
+        white-space: nowrap;
+        border-bottom: none;
+        border-right: 1px solid #d9d9d9;
+      }
+      .font-normal{
+        vertical-align: middle;
+        padding: 10px 15px;
+        border-bottom: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        border-left: 1px solid #d9d9d9;
+        background-color: #fff;
+        font-weight: normal;
+        span{
+          font-size: .8rem;
+        }
+      }
+      td {
+        vertical-align: middle;
+        padding: 10px 15px;
+        border-bottom: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        background-color: #fff;
+        font-weight: bold;
+        .small{
+          font-size: .7rem;
+        }
+      }
+      @at-root .btn-wrap-center{
+        text-align: center;
+      }
+    }
+  }
+}

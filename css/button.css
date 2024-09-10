@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+/*基本設定*/
+.btn,
+a.btn,
+button.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*ヘッダーのお問合せボタン*/
+/*20番目*/
+a.btn--orange-2 {
+  color: #fff;
+  background-color: #66A17D;
+  width: 50%;
+}
+a.btn-c {
+  font-size: 0.8rem;
+  position: relative;
+  padding: 0.8rem 2rem;
+}
+a.btn-c:hover {
+  background: #81CC9D;
+}
+@media (min-width: 48rem) {
+  a.btn-c {
+    padding: 0.8rem 0.5rem;
+  }
+}
+@media (min-width: 64.375rem) {
+  a.btn-c {
+    padding: 0.8rem 3.3rem;
+  }
+}
+
+a.btn--orange-2::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: "\f054";
+}
+a.btn--orange-2 i.fa {
+  margin-right: 1rem;
+}
+
+/*トップの各種ボタン*/
+/*20番目*/
+a.btn--orange-3 {
+  color: #fff;
+  background-color: #66A17D;
+  width: 50%;
+}
+a.btn-c-2 {
+  font-size: 0.8rem;
+  position: relative;
+  padding: 0.8rem 2rem;
+}
+@media (min-width: 48rem) {
+  a.btn-c-2 {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
+@media (min-width: 64.375rem) {
+  a.btn-c-2 {
+    padding: 0.8rem 1rem;
+  }
+}
+
+a.btn--orange-3::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: "\f054";
+}
+a.btn--orange-3 i.fa {
+  margin-right: 1rem;
+}
+
+/*トップの料金のボタン*/
+/*20番目*/
+a.btn--orange-4 {
+  color: #fff;
+  background-color: #66A17D;
+  width: 40%;
+}
+@media (min-width: 62.5rem) {
+  a.btn--orange-4 {
+    width: 20%;
+  }
+}
+a.btn-c-2 {
+  font-size: 0.8rem;
+  position: relative;
+  padding: 0.8rem 2rem;
+}
+@media (min-width: 48rem) {
+  a.btn-c-2 {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
+@media (min-width: 64.375rem) {
+  a.btn-c-2 {
+    padding: 0.8rem 1rem;
+  }
+}
+
+a.btn--orange-4::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: "\f054";
+}
+a.btn--orange-4 i.fa {
+  margin-right: 1rem;
+}
+
+/*トップのPLACEのお問合せボタン*/
+/*20番目*/
+a.btn--orange-5 {
+  color: #fff;
+  background-color: #66A17D;
+  width: 50%;
+}
+@media (min-width: 62.5rem) {
+  a.btn--orange-5 {
+    width: 20%;
+  }
+}
+a.btn-c-2 {
+  font-size: 0.8rem;
+  position: relative;
+  padding: 0.8rem 2rem !important;
+}
+@media (min-width: 48rem) {
+  a.btn-c-2 {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
+@media (min-width: 64.375rem) {
+  a.btn-c-2 {
+    padding: 0.8rem 1rem;
+  }
+}
+
+a.btn--orange-5::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: "\f054";
+}
+a.btn--orange-5 i.fa {
+  margin-right: 1rem;
+}
+
+/*トップに戻るアイコン*/
+a.btn--circle {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 48rem) {
+  a.btn--circle {
+    width: 60px;
+    height: 60px;
+  }
+}
+a.btn--circle i {
+  font-size: 100%;
+  line-height: 50px;
+  transition: all 0.3s;
+  letter-spacing: 0;
+}
+@media (min-width: 48rem) {
+  a.btn--circle i {
+    font-size: 150%;
+    line-height: 60px;
+  }
+}
+
+a.btn--circle:hover i {
+  line-height: 55px;
+}
+
+/*動作の動き*/
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 9999;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+}
+@media (min-width: 62.5rem) {
+  #page-top {
+    right: 20px;
+  }
+}
+
+/*　上に上がる動き　*/
+#page-top.UpMove {
+  -webkit-animation: UpAnime 0.5s forwards;
+          animation: UpAnime 0.5s forwards;
+}
+
+@-webkit-keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*　下に下がる動き　*/
+#page-top.DownMove {
+  -webkit-animation: DownAnime 0.5s forwards;
+          animation: DownAnime 0.5s forwards;
+}
+
+@-webkit-keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}

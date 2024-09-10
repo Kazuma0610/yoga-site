@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+#part3 {
+  margin-top: 100px;
+}
+#part3 .lesson-wrapper-pc {
+  display: none;
+}
+@media (min-width: 62.5rem) {
+  #part3 .lesson-wrapper-pc {
+    display: block;
+  }
+}
+#part3 .lesson-wrapper-pc h2 {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+#part3 .lesson-wrapper-pc h2 .subtitle {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #66A17D;
+}
+#part3 .lesson-wrapper-pc .lesson-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#part3 .lesson-wrapper-pc .lesson-content .lesson-img {
+  width: 50%;
+  position: relative;
+  left: 50px;
+}
+#part3 .lesson-wrapper-pc .lesson-content .lesson-text {
+  width: 50%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  position: relative;
+  right: 50px;
+  z-index: 2;
+  padding: 30px;
+}
+#part3 .lesson-wrapper-pc .lesson-content .lesson-text h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #66A17D;
+}
+#part3 .lesson-wrapper-pc .lesson-content .lesson-text p {
+  margin-bottom: 20px;
+}
+#part3 .lesson-wrapper-pc .lesson-content .lesson-text .lesson-detail {
+  padding-top: 10px;
+}
+#part3 .lesson-wrapper-sp {
+  display: block;
+}
+@media (min-width: 62.5rem) {
+  #part3 .lesson-wrapper-sp {
+    display: none;
+  }
+}
+#part3 .lesson-wrapper-sp h2 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+#part3 .lesson-wrapper-sp h2 .subtitle {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #66A17D;
+}
+#part3 .lesson-wrapper-sp .lesson-content {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#part3 .lesson-wrapper-sp .lesson-content .lesson-text {
+  max-width: 540px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ebebeb;
+}
+#part3 .lesson-wrapper-sp .lesson-content .lesson-text h3 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #66A17D;
+  text-align: left;
+  padding: 5px;
+  padding-left: 20px;
+}
+#part3 .lesson-wrapper-sp .lesson-content .lesson-text .lesson-detail {
+  text-align: left;
+}
+#part3 .lesson-wrapper-sp .lesson-content .lesson-text .lesson-detail p {
+  font-size: 1rem;
+  padding: 20px;
+}
+#part3 .lesson-wrapper-sp .lesson-content .lesson-text .lesson-detail .btn-wrap {
+  padding-bottom: 20px;
+  text-align: center;
+}
