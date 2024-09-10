@@ -10,7 +10,7 @@
 .contents .archive-flex {
   display: flex;
   gap: 25px;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   padding-bottom: 20px;
 }
@@ -30,6 +30,25 @@
 }
 @media (min-width: 48rem) {
   .contents .archive-flex .type-post .entry-footer {
+    font-size: 1rem;
+  }
+}
+.contents .archive-flex .type-news {
+  width: calc(50% - 25px);
+}
+.contents .archive-flex .type-news .card__time {
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contents .archive-flex .type-news .card__time {
+    font-size: 1rem;
+  }
+}
+.contents .archive-flex .type-news .entry-footer {
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contents .archive-flex .type-news .entry-footer {
     font-size: 1rem;
   }
 }

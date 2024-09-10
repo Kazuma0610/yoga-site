@@ -70,7 +70,19 @@ function my_enqueue_scripts()
   wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array(), $version);
   wp_enqueue_style('button-style', get_template_directory_uri() . '/css/button.css', array(), $version);
   wp_enqueue_style('navi-style', get_template_directory_uri() . '/css/navi.css', array(), $version);
+  wp_enqueue_style('info-style', get_template_directory_uri() . '/css/information.css', array(), $version);
+  wp_enqueue_style('profile-style', get_template_directory_uri() . '/css/profile.css', array(), $version);
+  wp_enqueue_style('lesson-style', get_template_directory_uri() . '/css/lesson.css', array(), $version);
+  wp_enqueue_style('price-style', get_template_directory_uri() . '/css/price.css', array(), $version);
+  wp_enqueue_style('blog-style', get_template_directory_uri() . '/css/blog.css', array(), $version);
+  wp_enqueue_style('place-style', get_template_directory_uri() . '/css/place.css', array(), $version);
+  wp_enqueue_style('page-yoga-style', get_template_directory_uri() . '/css/page-yoga.css', array(), $version);
+  wp_enqueue_style('contact-style', get_template_directory_uri() . '/css/contact.css', array(), $version);
   wp_enqueue_script('navi-script', get_template_directory_uri() . '/js/navi.js', array('jquery'), $version, true);
+  wp_enqueue_script('link-move-script', get_template_directory_uri() . '/js/link-move.js', array('jquery'), $version, true);
+  wp_enqueue_script('page-top-script', get_template_directory_uri() . '/js/page-top.js', array('jquery'), $version, true);
+  wp_enqueue_script('header-move-script', get_template_directory_uri() . '/js/header-move.js', array('jquery'), $version, true);
+  wp_enqueue_script('text-move-script', get_template_directory_uri() . '/js/text-move.js', array('jquery'), $version, true);
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
 
@@ -168,7 +180,6 @@ if (function_exists('register_sidebar')) {
 }
 
 
-
 /*お知らせの設定*/
 function create_post_type_news(){
   register_post_type( 
@@ -204,7 +215,6 @@ function shortcode_news_list() {
    $date = get_the_date('Y/m/d');
    $html .= '<li>';
    $html .= '<a href="'.$url.'">';
-   $html .= '<p class="news_date">'.$date.'</p>';
    $html .= '<div class="news_title">'.$title.'</div>';
    $html .= '</a></li>';
    endwhile;

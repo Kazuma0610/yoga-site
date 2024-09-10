@@ -2,7 +2,7 @@
 
 <section id="wrapper">
     
-  <main id="main" class="container two-columns site-main">
+  <main id="main" class="container two-columns">
 
     <div class="contents">
 

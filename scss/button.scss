@@ -26,20 +26,20 @@ button.btn {
   border-radius: 0.5rem;
 }
 
-/*トップのお問合せボタン*/
+
+/*ヘッダーのお問合せボタン*/
 /*20番目*/
 a.btn--orange-2 {
     color: #fff;
     background-color: #66A17D;
     width: 50%;
-    &:hover{
-      color: #fff;
-      background: #8cb99e;
-    }
     @at-root a.btn-c{
-      font-size: 1rem;
+      font-size: .8rem;
       position: relative;
-      padding: .8rem 3.3rem;
+      padding: .8rem 2rem;
+      &:hover{
+        background: #81CC9D;
+      }
       @include m.breakpoint(tablet){
         padding: .8rem 0.5rem;
       }
@@ -62,3 +62,188 @@ a.btn--orange-2 {
       margin-right: 1rem;
     }
   }
+
+
+/*トップの各種ボタン*/
+/*20番目*/
+a.btn--orange-3 {
+  color: #fff;
+  background-color: #66A17D;
+  width: 50%;
+  @at-root a.btn-c-2{
+    font-size: .8rem;
+    position: relative;
+    padding: .8rem 2rem;
+    @include m.breakpoint(tablet){
+      font-size: 1rem;
+      padding: .8rem 0.5rem;
+    }
+    @include m.breakpoint(pc){
+      padding: .8rem 1rem;
+    }
+  }
+  &::before{
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1rem;
+    line-height: 1;
+    position: absolute;
+    top: calc(50% - .5rem);
+    right: 1rem;
+    margin: 0;
+    padding: 0;
+    content: '\f054';
+  }
+  i.fa{
+    margin-right: 1rem;
+  }
+}
+
+/*トップの料金のボタン*/
+/*20番目*/
+a.btn--orange-4 {
+  color: #fff;
+  background-color: #66A17D;
+  width: 40%;
+  @include m.breakpoint(ipad-pro){
+    width: 20%;
+  }
+  @at-root a.btn-c-2{
+    font-size: .8rem;
+    position: relative;
+    padding: .8rem 2rem;
+    @include m.breakpoint(tablet){
+      font-size: 1rem;
+      padding: .8rem 0.5rem;
+    }
+    @include m.breakpoint(pc){
+      padding: .8rem 1rem;
+    }
+  }
+  &::before{
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1rem;
+    line-height: 1;
+    position: absolute;
+    top: calc(50% - .5rem);
+    right: 1rem;
+    margin: 0;
+    padding: 0;
+    content: '\f054';
+  }
+  i.fa{
+    margin-right: 1rem;
+  }
+}
+
+/*トップのPLACEのお問合せボタン*/
+/*20番目*/
+a.btn--orange-5 {
+  color: #fff;
+  background-color: #66A17D;
+  width: 50%;
+  @include m.breakpoint(ipad-pro){
+    width: 20%;
+  }
+  @at-root a.btn-c-2{
+    font-size: .8rem;
+    position: relative;
+    padding: .8rem 2rem!important;
+    @include m.breakpoint(tablet){
+      font-size: 1rem;
+      padding: .8rem 0.5rem;
+    }
+    @include m.breakpoint(pc){
+      padding: .8rem 1rem;
+    }
+  }
+  &::before{
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1rem;
+    line-height: 1;
+    position: absolute;
+    top: calc(50% - .5rem);
+    right: 1rem;
+    margin: 0;
+    padding: 0;
+    content: '\f054';
+  }
+  i.fa{
+    margin-right: 1rem;
+  }
+}
+
+
+/*トップに戻るアイコン*/
+a.btn--circle {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  @include m.breakpoint(tablet){
+    width: 60px;
+    height: 60px;
+   }
+  i{
+    font-size: 100%;
+    line-height: 50px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    letter-spacing: 0;
+    @include m.breakpoint(tablet){
+      font-size: 150%;
+      line-height: 60px;
+    }
+  }
+}
+
+a.btn--circle:hover i {
+  line-height: 55px;
+}
+
+/*動作の動き*/
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 9999;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+  @include m.breakpoint(ipad-pro){
+    right: 20px;
+  }
+}
+
+/*　上に上がる動き　*/
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}

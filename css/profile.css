@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+#part2 {
+  margin-top: 100px;
+}
+#part2 .profile-wrapper-pc {
+  display: none;
+}
+@media (min-width: 62.5rem) {
+  #part2 .profile-wrapper-pc {
+    display: block;
+  }
+}
+#part2 .profile-wrapper-pc h2 {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+#part2 .profile-wrapper-pc h2 .subtitle {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #66A17D;
+}
+#part2 .profile-wrapper-pc .pro-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#part2 .profile-wrapper-pc .pro-content .pro-text {
+  width: 50%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  position: relative;
+  left: 50px;
+  z-index: 2;
+  padding: 30px;
+}
+#part2 .profile-wrapper-pc .pro-content .pro-text h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #66A17D;
+}
+#part2 .profile-wrapper-pc .pro-content .pro-text .detail-pro p {
+  position: relative;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  font-weight: bold;
+}
+#part2 .profile-wrapper-pc .pro-content .pro-text .detail-pro p::after {
+  content: "|";
+  padding: 0 20px 0px 20px;
+  position: absolute;
+  left: 45px;
+}
+#part2 .profile-wrapper-pc .pro-content .pro-text .detail-pro p span {
+  margin-left: 20px;
+}
+#part2 .profile-wrapper-pc .pro-content .pro-text .detail-history {
+  margin-top: 20px;
+}
+#part2 .profile-wrapper-pc .pro-content .pro-img {
+  width: 50%;
+  position: relative;
+  right: 50px;
+}
+#part2 .profile-wrapper-pc .insta-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#part2 .profile-wrapper-pc .insta-content .insta-img {
+  width: 50%;
+  position: relative;
+  left: 50px;
+}
+#part2 .profile-wrapper-pc .insta-content .insta-text {
+  width: 50%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  position: relative;
+  right: 50px;
+  z-index: 2;
+  padding: 30px;
+}
+#part2 .profile-wrapper-pc .insta-content .insta-text h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #66A17D;
+}
+#part2 .profile-wrapper-pc .insta-content .insta-text p {
+  margin-bottom: 20px;
+}
+#part2 .profile-wrapper-pc .insta-content .insta-text .insta-detail {
+  padding-top: 10px;
+}
+#part2 .profile-wrapper-sp {
+  display: block;
+}
+@media (min-width: 62.5rem) {
+  #part2 .profile-wrapper-sp {
+    display: none;
+  }
+}
+#part2 .profile-wrapper-sp h2 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+#part2 .profile-wrapper-sp h2 .subtitle {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #66A17D;
+}
+#part2 .profile-wrapper-sp .pro-content {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text {
+  max-width: 540px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ebebeb;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text h3 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #66A17D;
+  text-align: left;
+  padding: 5px;
+  padding-left: 20px;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text .detail-pro {
+  text-align: left;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text .detail-pro p {
+  position: relative;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text .detail-pro p span {
+  margin-left: 20px;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text .detail-history {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text .detail-history h4 {
+  position: relative;
+  padding: 5px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text .detail-history h4::before {
+  position: absolute;
+  bottom: 0px;
+  width: 30px;
+  height: 2px;
+  content: "";
+  border-radius: 3px;
+  background: #000;
+}
+#part2 .profile-wrapper-sp .pro-content .pro-text .detail-history p {
+  padding: 10px;
+}
+#part2 .profile-wrapper-sp .insta-content {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+#part2 .profile-wrapper-sp .insta-content .insta-text {
+  max-width: 540px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ebebeb;
+}
+#part2 .profile-wrapper-sp .insta-content .insta-text h3 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #66A17D;
+  text-align: left;
+  padding: 5px;
+  padding-left: 20px;
+}
+#part2 .profile-wrapper-sp .insta-content .insta-text .insta-detail {
+  text-align: left;
+}
+#part2 .profile-wrapper-sp .insta-content .insta-text .insta-detail p {
+  font-size: 1rem;
+  padding: 20px;
+}
+#part2 .profile-wrapper-sp .insta-content .insta-text .insta-detail .btn-wrap {
+  padding-bottom: 20px;
+  text-align: center;
+}

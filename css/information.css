@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+#part1 {
+  margin-top: 60px;
+}
+#part1 .news-wrapper {
+  padding: 5px;
+}
+#part1 .news-wrapper h2 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 62.5rem) {
+  #part1 .news-wrapper h2 {
+    font-size: 2rem;
+  }
+}
+#part1 .news-wrapper h2 .subtitle {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #66A17D;
+}
+@media (min-width: 62.5rem) {
+  #part1 .news-wrapper h2 .subtitle {
+    font-size: 1.75rem;
+  }
+}
+#part1 .news-wrapper .info-posts {
+  border: 1px solid #66A17D;
+  padding: 10px 10px 10px 10px;
+  background-color: #fff;
+  margin-top: 30px;
+}
+@media (min-width: 48rem) {
+  #part1 .news-wrapper .info-posts {
+    padding: 10px 150px 10px 150px;
+  }
+}
+@media (min-width: 62.5rem) {
+  #part1 .news-wrapper .info-posts {
+    padding: 10px 250px 10px 250px;
+  }
+}
+#part1 .news-wrapper .info-posts .entry-header-news a:hover {
+  opacity: 0.5;
+}
+#part1 .news-wrapper .info-posts .entry-header-news a .news_date {
+  display: inline;
+  font-size: 0.8rem;
+}
+@media (min-width: 62.5rem) {
+  #part1 .news-wrapper .info-posts .entry-header-news a .news_date {
+    font-size: 1rem;
+  }
+}
+#part1 .news-wrapper .info-posts .entry-header-news a .news_title {
+  display: inline;
+  padding-left: 20px;
+  font-size: 0.8rem;
+}
+@media (min-width: 62.5rem) {
+  #part1 .news-wrapper .info-posts .entry-header-news a .news_title {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,102 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+#part3{
+  margin-top: 100px;
+  .lesson-wrapper-pc{
+    display: none;
+    @include m.breakpoint(ipad-pro){
+      display: block;
+    }
+    h2{
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      .subtitle{
+        display: block;
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #66A17D;
+      }
+    }
+    .lesson-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      .lesson-img{
+        width: 50%;
+        position: relative;
+        left: 50px;
+      }
+      .lesson-text{
+        width: 50%;
+        border: 1px solid #ebebeb;
+        background-color: #fff;
+        position: relative;
+        right: 50px;
+        z-index: 2;
+        padding: 30px;
+        h3{
+          font-size: 1.5rem;
+          border-bottom: 1px solid #66A17D;
+        }
+        p{
+          margin-bottom: 20px;
+        }
+        .lesson-detail{
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .lesson-wrapper-sp{
+    display: block;
+    @include m.breakpoint(ipad-pro){
+      display: none;
+    }
+    h2{
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      .subtitle{
+        display: block;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #66A17D;
+      }
+    }
+    .lesson-content{
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      .lesson-text{
+        max-width: 540px;
+        margin: 0 auto;
+        background: #fff;
+        border: 1px solid #ebebeb;
+        h3{
+          font-size: 1.2rem;
+          border-bottom: 1px solid #66A17D;
+          text-align: left;
+          padding: 5px;
+          padding-left: 20px;
+        }
+        .lesson-detail{
+          text-align: left;
+          p{
+            font-size: 1rem;
+            padding: 20px;
+          }
+          .btn-wrap{
+            padding-bottom: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

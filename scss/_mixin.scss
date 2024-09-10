@@ -1,5 +1,10 @@
 /*レスポンシブル*/
 @mixin breakpoint($point) {
+	@if $point == blackBerry {
+		@media (max-width: 22.5rem) {
+			@content;
+		}
+	}
 	@if $point == mini {
 		@media (min-width: 25rem) {
 			@content;

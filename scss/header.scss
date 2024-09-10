@@ -1,7 +1,13 @@
 @use "variable" as v;
 @use "mixin" as m;
 
-#header{
+#header,.site-header{
+    position: fixed;/*追従ナビのためpositionをfixedにする*/
+    top:0;/*ポジション設定topを0*/
+    height: 80px;/*headerの高さを指定*/
+    width:100%;/*position:fixed;にしたため、横幅100%を設定*/
+    z-index: 999;
+    transition: .5s;
     .header-inner{
         .logo-navi-wrapper-pc{
             display: none;
@@ -10,6 +16,14 @@
                 justify-content: space-between;
                 align-items: center;
                 height: 100%;
+            }
+            .logo-img{
+                .site-title{
+                    img{
+                        width: 200px;
+                        height: 54px;
+                    }
+                }
             }
             .navi-pc{
                 ul{
@@ -23,7 +37,7 @@
                         a{
                             position: relative;
                             &:hover{
-                                color:#0481A2;
+                                color:#66A17D;
                                 &::after{
                                     transform: scale(1, 1);/*X方向にスケール拡大*/
                                 }
@@ -37,7 +51,7 @@
                                 /*線になる丸の形状*/
                                 width: 80%;
                                 height: 2px;
-                                background:#0481A2;
+                                background:#66A17D;
                                 /*アニメーションの指定*/
                                 transition: all .3s;
                                 transform: scale(0, 1);/*X方向0、Y方向1*/
@@ -62,6 +76,18 @@
             @include m.breakpoint(pc){
                 display: none;
             }
+            .logo-img{
+                .site-title{
+                    img{
+                        width: 200px;
+                        height: 54px;
+                    }
+                }
+            }
         }
     }
+}
+
+.site-header,#header.hide{
+    top: -80px;
 }

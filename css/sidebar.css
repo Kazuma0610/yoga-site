@@ -5,11 +5,18 @@ aside
 -------------------------------------------*/
 #sidebar {
   width: 100%;
+  margin-top: 50px;
 }
 @media (min-width: 48rem) {
   #sidebar {
     width: 33%;
+  }
+}
+@media (min-width: 62.5rem) {
+  #sidebar {
+    width: 33%;
     padding: 20px;
+    margin-top: 0px;
   }
 }
 #sidebar .author {
@@ -36,16 +43,41 @@ aside
   margin: 30px 0;
   text-align: center;
 }
-#sidebar .archive .side-title {
+#sidebar .archive div:nth-child(2) {
+  margin-top: 20px;
+}
+#sidebar .archive div .widget-title {
   text-align: left;
-  padding: 20px;
+  margin-bottom: 5px;
 }
-#sidebar .archive ul {
-  border-bottom: solid 1px #777;
+#sidebar .archive div .widget-title i {
+  margin-right: 5px;
 }
-#sidebar .archive ul li {
+#sidebar .archive div .side-title {
+  text-align: left;
+}
+#sidebar .archive div .wp-widget-group__inner-blocks {
+  margin-top: 0px;
+}
+#sidebar .archive div .wp-widget-group__inner-blocks ul li {
   font-size: 0.875rem;
-  border-top: solid 1px #777;
-  padding: 20px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+}
+#sidebar .archive .news-side {
+  margin-top: 20px;
+  text-align: left;
+}
+#sidebar .archive .news-side h2 {
+  margin-bottom: 5px;
+}
+#sidebar .archive .news-side h2 .fa-solid {
+  margin-right: 5px;
+}
+#sidebar .archive .news-side ul li {
+  font-size: 0.875rem;
+  padding-left: 10px;
+  padding-bottom: 5px;
   text-align: left;
 }

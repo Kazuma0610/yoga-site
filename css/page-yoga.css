@@ -1,0 +1,558 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+.yoga-contents {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 0 10px 0 10px;
+  margin-bottom: 100px;
+}
+@media (min-width: 48rem) {
+  .yoga-contents {
+    padding: 0 30px 0 30px;
+  }
+}
+.yoga-contents .yoga-pc {
+  display: none;
+}
+@media (min-width: 62.5rem) {
+  .yoga-contents .yoga-pc {
+    display: block;
+  }
+}
+.yoga-contents .yoga-pc .pt1-wrapper .heading14 {
+  position: relative;
+  padding-left: 60px;
+  font-size: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.yoga-contents .yoga-pc .pt1-wrapper .heading14::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #49796B;
+  font-size: 3rem;
+}
+.yoga-contents .yoga-pc .pt1-wrapper .heading14::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(63, 193, 201);
+}
+.yoga-contents .yoga-pc .pt1-wrapper .flex-yoga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.yoga-contents .yoga-pc .pt1-wrapper .flex-yoga .yoga-img {
+  width: 50%;
+  position: relative;
+  z-index: 10;
+}
+.yoga-contents .yoga-pc .pt1-wrapper .flex-yoga .yoga-text {
+  width: 50%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  position: relative;
+  top: 60px;
+  padding: 30px;
+  z-index: 10;
+}
+.yoga-contents .yoga-pc .pt1-wrapper .flex-yoga .yoga-text h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #66A17D;
+}
+.yoga-contents .yoga-pc .pt1-wrapper .flex-yoga .yoga-text p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.yoga-contents .yoga-pc .pt1-wrapper .flex-yoga::after {
+  content: "";
+  width: 800px;
+  height: 250px;
+  position: absolute;
+  top: 300px;
+  z-index: 1;
+  background-color: #a2bab2;
+}
+.yoga-contents .yoga-pc .pt2-wrapper {
+  margin-top: 200px;
+}
+.yoga-contents .yoga-pc .pt2-wrapper .heading15 {
+  position: relative;
+  padding-left: 60px;
+  font-size: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.yoga-contents .yoga-pc .pt2-wrapper .heading15::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #49796B;
+  font-size: 3rem;
+}
+.yoga-contents .yoga-pc .pt2-wrapper .heading15::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(63, 193, 201);
+}
+.yoga-contents .yoga-pc .pt2-wrapper .flex-yoga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.yoga-contents .yoga-pc .pt2-wrapper .flex-yoga .yoga-img {
+  width: 50%;
+  position: relative;
+  top: 0px;
+  z-index: 10;
+}
+.yoga-contents .yoga-pc .pt2-wrapper .flex-yoga .yoga-text {
+  width: 50%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  position: relative;
+  top: 90px;
+  padding: 30px;
+  z-index: 10;
+}
+.yoga-contents .yoga-pc .pt2-wrapper .flex-yoga .yoga-text h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #66A17D;
+}
+.yoga-contents .yoga-pc .pt2-wrapper .flex-yoga .yoga-text p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.yoga-contents .yoga-pc .pt2-wrapper .flex-yoga::after {
+  content: "";
+  width: 800px;
+  height: 250px;
+  position: absolute;
+  top: 820px;
+  z-index: 1;
+  background-color: #d0dcd8;
+}
+.yoga-contents .yoga-pc .pt3-wrapper {
+  margin-top: 200px;
+}
+.yoga-contents .yoga-pc .pt3-wrapper .heading16 {
+  position: relative;
+  padding-left: 60px;
+  font-size: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.yoga-contents .yoga-pc .pt3-wrapper .heading16::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #49796B;
+  font-size: 3rem;
+}
+.yoga-contents .yoga-pc .pt3-wrapper .heading16::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(63, 193, 201);
+}
+.yoga-contents .yoga-pc .pt3-wrapper .flex-yoga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.yoga-contents .yoga-pc .pt3-wrapper .flex-yoga .yoga-img {
+  width: 50%;
+  position: relative;
+  z-index: 10;
+}
+.yoga-contents .yoga-pc .pt3-wrapper .flex-yoga .yoga-text {
+  width: 50%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  position: relative;
+  top: 80px;
+  padding: 30px;
+  z-index: 10;
+}
+.yoga-contents .yoga-pc .pt3-wrapper .flex-yoga .yoga-text h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #66A17D;
+}
+.yoga-contents .yoga-pc .pt3-wrapper .flex-yoga .yoga-text p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.yoga-contents .yoga-pc .pt3-wrapper .flex-yoga::after {
+  content: "";
+  width: 800px;
+  height: 250px;
+  position: absolute;
+  top: 1350px;
+  z-index: 1;
+  background-color: #809790;
+}
+.yoga-contents .yoga-pc .price-grid {
+  margin-top: 200px;
+}
+.yoga-contents .yoga-pc .price-grid h3 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #66A17D;
+}
+.yoga-contents .yoga-pc .price-grid table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+@media (min-width: 48rem) {
+  .yoga-contents .yoga-pc .price-grid table {
+    width: 75%;
+  }
+}
+@media (min-width: 62.5rem) {
+  .yoga-contents .yoga-pc .price-grid table {
+    width: 90%;
+  }
+}
+.yoga-contents .yoga-pc .price-grid table tr {
+  padding: 10px 15px;
+  background-color: #49796B;
+}
+.yoga-contents .yoga-pc .price-grid table th {
+  font-weight: bold;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  border-bottom: none;
+  border-right: 1px solid #d9d9d9;
+}
+.yoga-contents .yoga-pc .price-grid table .font-normal {
+  vertical-align: middle;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  background-color: #fff;
+  font-weight: normal;
+}
+.yoga-contents .yoga-pc .price-grid table .font-normal span {
+  font-size: 0.8rem;
+}
+.yoga-contents .yoga-pc .price-grid table td {
+  vertical-align: middle;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  background-color: #fff;
+  font-weight: bold;
+}
+.yoga-contents .yoga-pc .price-grid table td .small {
+  font-size: 0.7rem;
+}
+.btn-wrap-center {
+  text-align: center;
+}
+
+.yoga-contents .yoga-sp {
+  display: block;
+}
+@media (min-width: 62.5rem) {
+  .yoga-contents .yoga-sp {
+    display: none;
+  }
+}
+.yoga-contents .yoga-sp .pt1-wrapper .heading14 {
+  position: relative;
+  padding-left: 60px;
+  font-size: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 48rem) {
+  .yoga-contents .yoga-sp .pt1-wrapper .heading14 {
+    font-size: 1.5rem;
+  }
+}
+.yoga-contents .yoga-sp .pt1-wrapper .heading14::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #49796B;
+  font-size: 3rem;
+}
+.yoga-contents .yoga-sp .pt1-wrapper .heading14::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(63, 193, 201);
+}
+.yoga-contents .yoga-sp .pt1-wrapper .direct-yoga {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.yoga-contents .yoga-sp .pt1-wrapper .direct-yoga .yoga-img {
+  width: 100%;
+}
+.yoga-contents .yoga-sp .pt1-wrapper .direct-yoga .yoga-text {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+}
+.yoga-contents .yoga-sp .pt1-wrapper .direct-yoga .yoga-text h3 {
+  font-size: 1rem;
+  border-bottom: 1px solid #66A17D;
+  padding: 5px;
+}
+@media (min-width: 48rem) {
+  .yoga-contents .yoga-sp .pt1-wrapper .direct-yoga .yoga-text h3 {
+    font-size: 1.5rem;
+  }
+}
+.yoga-contents .yoga-sp .pt1-wrapper .direct-yoga .yoga-text p {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.yoga-contents .yoga-sp .pt2-wrapper {
+  margin-top: -30px;
+}
+.yoga-contents .yoga-sp .pt2-wrapper .heading15 {
+  position: relative;
+  padding-left: 60px;
+  font-size: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 48rem) {
+  .yoga-contents .yoga-sp .pt2-wrapper .heading15 {
+    font-size: 1.5rem;
+  }
+}
+.yoga-contents .yoga-sp .pt2-wrapper .heading15::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #49796B;
+  font-size: 3rem;
+}
+.yoga-contents .yoga-sp .pt2-wrapper .heading15::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(63, 193, 201);
+}
+.yoga-contents .yoga-sp .pt2-wrapper .direct-yoga {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.yoga-contents .yoga-sp .pt2-wrapper .direct-yoga .yoga-img {
+  width: 100%;
+}
+.yoga-contents .yoga-sp .pt2-wrapper .direct-yoga .yoga-text {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+}
+.yoga-contents .yoga-sp .pt2-wrapper .direct-yoga .yoga-text h3 {
+  font-size: 1rem;
+  border-bottom: 1px solid #66A17D;
+  padding: 5px;
+}
+@media (min-width: 48rem) {
+  .yoga-contents .yoga-sp .pt2-wrapper .direct-yoga .yoga-text h3 {
+    font-size: 1.5rem;
+  }
+}
+.yoga-contents .yoga-sp .pt2-wrapper .direct-yoga .yoga-text p {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.yoga-contents .yoga-sp .pt3-wrapper {
+  margin-top: -30px;
+}
+.yoga-contents .yoga-sp .pt3-wrapper .heading16 {
+  position: relative;
+  padding-left: 60px;
+  font-size: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 48rem) {
+  .yoga-contents .yoga-sp .pt3-wrapper .heading16 {
+    font-size: 1.5rem;
+  }
+}
+.yoga-contents .yoga-sp .pt3-wrapper .heading16::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #49796B;
+  font-size: 3rem;
+}
+.yoga-contents .yoga-sp .pt3-wrapper .heading16::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(63, 193, 201);
+}
+.yoga-contents .yoga-sp .pt3-wrapper .direct-yoga {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.yoga-contents .yoga-sp .pt3-wrapper .direct-yoga .yoga-img {
+  width: 100%;
+}
+.yoga-contents .yoga-sp .pt3-wrapper .direct-yoga .yoga-text {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+}
+.yoga-contents .yoga-sp .pt3-wrapper .direct-yoga .yoga-text h3 {
+  font-size: 1rem;
+  border-bottom: 1px solid #66A17D;
+  padding: 5px;
+}
+@media (min-width: 48rem) {
+  .yoga-contents .yoga-sp .pt3-wrapper .direct-yoga .yoga-text h3 {
+    font-size: 1.5rem;
+  }
+}
+.yoga-contents .yoga-sp .pt3-wrapper .direct-yoga .yoga-text p {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.yoga-contents .yoga-sp .price-grid {
+  margin-top: -20px;
+}
+.yoga-contents .yoga-sp .price-grid h3 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #66A17D;
+}
+.yoga-contents .yoga-sp .price-grid table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+@media (min-width: 48rem) {
+  .yoga-contents .yoga-sp .price-grid table {
+    width: 75%;
+  }
+}
+@media (min-width: 62.5rem) {
+  .yoga-contents .yoga-sp .price-grid table {
+    width: 90%;
+  }
+}
+.yoga-contents .yoga-sp .price-grid table tr {
+  padding: 10px 15px;
+  background-color: #49796B;
+}
+.yoga-contents .yoga-sp .price-grid table th {
+  font-weight: bold;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  border-bottom: none;
+  border-right: 1px solid #d9d9d9;
+}
+.yoga-contents .yoga-sp .price-grid table .font-normal {
+  vertical-align: middle;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  background-color: #fff;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+.yoga-contents .yoga-sp .price-grid table .font-normal span {
+  font-size: 0.8rem;
+}
+.yoga-contents .yoga-sp .price-grid table td {
+  vertical-align: middle;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  background-color: #fff;
+  font-weight: bold;
+}
+.yoga-contents .yoga-sp .price-grid table td .small {
+  font-size: 0.7rem;
+}
+.btn-wrap-center {
+  text-align: center;
+}

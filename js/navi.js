@@ -3,7 +3,7 @@ $(".openbtn").click(function () {//ボタンがクリックされたら
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
 });
 
-$(".openbtn.active").click(function () {//ナビゲーションのリンクがクリックされたら
+$(".openbtn.active,#page-link li a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });

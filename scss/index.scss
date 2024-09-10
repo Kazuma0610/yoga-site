@@ -4,19 +4,19 @@
 /*---------------確認用に一時記述----------------*/
 /*--------要素を入れたら高さを消してください------*/
 
-header {background-color: #43515e;}
+header {background-color: #fff;}
  
 .header-inner {height: 80px; background-color: #fff;}
  
-.container {background-color: #a8b1c4;}
+/*.container {background-color: #a8b1c4;}*/
  
-.contents {background-color: #cdced3;padding:10px;}
+/*.contents {padding:10px;}*/
  
-.sidebar {background-color: #edf2f6;}
+.sidebar {background-color: #fff;}
  
-footer {background-color: #43515e;}
+footer {background-color: #49796B;}
  
-.footer-inner {height: 250px; background-color: #5f6d7b;}
+.footer-inner {background-color: #49796B;}
 
 .header-inner,
 .footer-inner{
@@ -34,8 +34,196 @@ footer {background-color: #43515e;}
 }
  
 .container {
-  padding-top: 30px;
   padding-bottom: 60px;
 }
 
+.site-main{
+  width: 100%;
+}
+
 /*----------------------------------------------*/
+
+
+/*---------------------MV用----------------------*/
+
+.mv-pc{
+  display: none;
+  @include m.breakpoint(ipad-pro){
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/pc_mv.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .mv-text-pc{
+    position: relative;
+    top: calc(50% - 3rem);
+    left: 35%;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+    @include m.breakpoint(pc){
+      left: 50%;
+    }
+    @include m.breakpoint(nest-hub){
+      font-size: 2.5rem;
+      left: 45%;
+    }
+  }
+}
+
+.mv-sp{
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/tablet_sp_mv.png) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  @include m.breakpoint(ipad-pro){
+    display: none;
+  }
+  .mv-text-sp{
+    position: relative;
+    top: calc(45% - 2rem);
+    left: 15%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+    @include m.breakpoint(tablet){
+      position: relative;
+      top: calc(45% - 2rem);
+      left: 40%;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 1px #000000;
+    }
+    @include m.breakpoint(blackBerry){
+      font-size: 1.3rem;
+    }
+  }
+}
+
+/*scss記述だと上手くいかず。CSSで記述しています*/
+
+.eachTextAnime{
+  @include m.breakpoint(pc){
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    width: 35%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px #000000;
+    position: relative;
+    top:40%;
+    left: 20%;
+  }
+  @include m.breakpoint(nest-hub-max){
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    width: 44%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px #000000;
+    position: relative;
+    top:40%;
+    left: 20%;
+  }
+  @include m.breakpoint(only-tab-max){
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px #000000;
+    position: relative;
+    top:40%;
+    left: 15%;
+  }
+  @include m.breakpoint(tablet-width){
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px #000000;
+    position: relative;
+    top:40%;
+    left: 15%;
+  }
+  @include m.breakpoint(surface-duo){
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px #000000;
+    position: relative;
+    top:40%;
+    left: 15%;
+  }         
+}
+.eachTextAnime span{
+  opacity: 0;
+}
+.eachTextAnime.appeartext span{ 
+  animation:text_anime_on 1s ease-out forwards; 
+}
+@keyframes text_anime_on {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+/*mainのハスの絵の挿入*/
+.hasu{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/hasu.png),url(../images/hasu4.png),url(../images/hasu.png);
+  background-repeat: no-repeat,no-repeat,no-repeat;
+  background-size: contain,contain,contain;
+  background-position: top,left 2200px,right 4300px;
+  overflow: hidden;
+  @include m.breakpoint(tablet){
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/hasu.png),url(../images/hasu4.png),url(../images/hasu.png);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-size: contain,contain,contain;
+    background-position: top,left 2200px,right 4100px;
+    overflow: hidden;
+  }
+  @include m.breakpoint(pc){
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/hasu.png),url(../images/hasu4.png);
+    background-repeat: no-repeat,no-repeat;
+    background-size: contain,contain;
+    background-position: top,bottom;
+    overflow: hidden;
+  }
+}
+
+.hasu2{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/hasu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  overflow: hidden;
+}
